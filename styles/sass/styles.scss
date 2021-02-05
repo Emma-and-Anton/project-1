@@ -66,12 +66,30 @@ a {
     font-weight: 700;
 }
 
+h1,
+h2,
+h3,
+button {
+    margin: 0;
+}
+
 h1 {
     font-family: $primaryFont;
     font-size: 13.8rem;
     line-height: 12.6rem;
+
 }
+
+
 
 h1 span {
     display: block;
+}
+
+.about {
+    height: 85vh;
+
+    background-color: #0C1423;
+
+    text-align: center;
 }

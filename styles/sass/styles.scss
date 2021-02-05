@@ -1,0 +1,40 @@
+@import "variables";
+@import "setup";
+
+.index-header {
+    height: 90vh;
+
+    background-image: url(../assets/header-image.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-nav {
+    width: 100%;
+
+    text-align: right;
+}
+
+.main-nav ul {
+     width: 100%
+}

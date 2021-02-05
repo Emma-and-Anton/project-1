@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,9 +227,28 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: ‘Lato’, sans-serif;
+  color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  text-transform: uppercase;
+}
+
 .index-header {
   height: 90vh;
-  background-image: url(../assets/header-image.jpg);
+  padding-top: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/header-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/header-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -255,9 +275,30 @@ a {
 
 .main-nav {
   width: 100%;
-  text-align: right;
 }
 
 .main-nav ul {
   width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-nav li a {
+  padding: 25px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: ‘Barlow’, sans-serif;
+  font-size: 13.8rem;
+  line-height: 12.6rem;
+}
+
+h1 span {
+  display: block;
 }

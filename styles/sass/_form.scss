@@ -1,0 +1,54 @@
+fieldset {
+    border: none;
+}
+
+.flex-form {
+    display: flex;
+    width: 100%;
+}
+
+input, 
+textarea {
+    margin: 20px;
+    padding: 30px 20px 20px;
+    font-size: 1.7rem;
+    background-color: $darkBackground;
+    border: 2px solid $lightShadow;
+}
+
+::placeholder {
+    color: $textColor;
+    opacity: 1;
+    font-family: $bodyFont;
+    font-size: 1.7rem;
+}
+
+input {
+    flex-grow: 1;
+    margin: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+input[type="text"] {
+    margin-right: 40px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.submit-button {
+    width: 100%;
+    color: $textColor;
+    font-size: 1.8rem;
+    padding: 15px 0;
+    margin-top: 40px;
+    background-color: $lightBackground;
+    border: 2px solid transparent;
+}
+

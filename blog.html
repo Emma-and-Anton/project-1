@@ -5,92 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 
     <!--header starts-->
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Blog</li>
-                <li><a href="#"></a>Contact</li>
-            </ul>
-        </nav>
-        <h1>Blog</h1>
+    <header class="other-pages blog-header">
+        <div class="wrapper">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Blog</h1>
+        <div><!--/.wrapper-->
     </header>
     <!--header ends-->
 
     <!--main starts-->
-    <main>
-        <aside> 
-            <div class="image-container">
-                <img src="./assets/side-blog-image.jpg" alt="A whale shark swimming in aquarium with many fish in front of people taking photos">
-            </div>
-            <h3>About under the sea</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis eum quidem, quisquam non illo?</p>
-            <h3>Recent posts</h3>
-            <ol>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ol>
-        </aside> 
-        <section class="blog">
-            <div class="image-container">
-                <img src="./assets/blog-post-image.jpg" alt="Different species of fish swimming in colorful coral">
-            </div>
-            <article class="blog-post">
-                <h2>Discovering new species</h2>
-                <p>
-                    <time datetime="2019-05-4">Monday May 4th, 2019</time>by Dieula
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque soluta perspiciatis assumenda magnam ipsam aut reprehenderit, cum dignissimos fugit doloremque, libero nostrum molestiae omnis? Quisquam harum sint fugit autem iusto beatae voluptas commodi eos totam ab neque, explicabo dolorem nihil doloribus, nisi accusamus culpa. Dicta debitis impedit tenetur amet quis commodi, itaque corrupti necessitatibus rerum atque eius cupiditate veritatis labore nulla obcaecati ea incidunt animi in maiores, dolore possimus deleniti natus recusandae et! Qui nesciunt fuga consequatur! Quam debitis consequuntur, similique numquam, repellendus ipsum in obcaecati maiores amet id ut corrupti impedit odio perspiciatis distinctio inventore esse vero voluptate magni nam quo neque reiciendis! Totam maiores ullam eaque fugit. Provident amet neque molestiae ad magnam consequatur rem incidunt accusamus. Repellat, obcaecati rem delectus corrupti voluptatem, illo animi nemo nisi, cum placeat suscipit quasi! Ut veritatis, labore eos facere tempora placeat est, animi voluptates, ad quas ipsam nisi iste repellendus hic?</p>
-            </article> <!--/.blog-post-->
-        </section> <!--/.blog-->
-        <section class="blog-comments">
-            <h2>Comments:</h2>
-            <article class="posted-comments">
-                <div class="image-container">
-                    <img src="./assets/comment-1.jpg" alt="">
+    <main class="blog-main">
+        <div class="wrapper">
+            <aside> 
+                <div class="aside-image">
+                    <img src="./assets/side-blog-image.jpg" alt="A whale shark swimming in aquarium with many fish in front of people taking photos">
                 </div>
-                <p>
-                    <time datetime="2018-10-9">Tuesday October 9th, 2018</time> 
-                    by Jeremy
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo eius reprehenderit possimus. Impedit pariatur corrupti nulla, accusamus eos ipsa culpa facilis eveniet nobis iusto laboriosam id ea quibusdam? Non.</p>
-            </article><!--/.posted-comments-->
-            <article class="posted-comments">
-                <div class="image-container">
-                    <img src="./assets/comment-2.jpg" alt="">
-                </div>
-                <p>
-                    <time datetime="2018-10-10">Wednesday October 10th, 2018</time>
-                    by Julia
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet earum doloremque ducimus dolor illo mollitia ullam hic tempora debitis perferendis facere, iusto natus quod cupiditate aliquam explicabo voluptatibus eius!</p>
-            </article><!--/.posted-comments-->
-            <form action="">
-                <fieldset>
-                    <legend class="sr-only">Post your comment</legend>
-                    
-                    <label for="user-name" class="sr-only">Enter your name</label>
-                    <input type="text" id="user-name" name="user-name" placeholder="Name">
-                    
-                    <label for="user-email" class="sr-only">Enter your email</label>
-                    <input type="user-email" id="user-email" name="user-email" placeholder="Email address">
-                    
-                    <label for="user-comment" class="sr-only">Enter your comment</label>
-                    <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                    
-                    <button type="submit" class="submit-button">Post comment</button>
-                </fieldset>
-            </form>
-        </section><!--/.blog-comments-->
+                <h3>About under the sea</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis eum quidem, quisquam non illo?</p>
+                <h3>Recent posts</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem ipsum dolor sit</li>
+                </ul>
+            </aside> 
+            <section class="blog">
+                <section class="posted-blog">
+                    <div class="blog-image">
+                        <img src="./assets/blog-post-image.jpg" alt="Different species of fish swimming in colorful coral">
+                    </div>
+                    <article class="blog-post">
+                        <h2>Discovering new species</h2>
+                        <p>
+                            <time datetime="2019-05-4">Monday May 4th, 2019</time> by Dieula
+                        </p>
+                        <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque soluta perspiciatis assumenda magnam ipsam aut reprehenderit, cum dignissimos fugit doloremque, libero nostrum molestiae omnis? Quisquam harum sint fugit autem iusto beatae voluptas commodi eos totam ab neque, explicabo dolorem nihil doloribus, nisi accusamus culpa. Dicta debitis impedit tenetur amet quis commodi, itaque corrupti necessitatibus rerum atque eius cupiditate veritatis labore nulla obcaecati ea incidunt animi in maiores, dolore possimus deleniti natus recusandae et! Qui nesciunt fuga consequatur! Quam debitis consequuntur, similique numquam, repellendus ipsum in obcaecati maiores amet id ut corrupti impedit odio perspiciatis distinctio inventore esse vero voluptate magni nam quo neque reiciendis! Totam maiores ullam eaque fugit. Provident amet neque molestiae ad magnam consequatur rem incidunt accusamus. Repellat, obcaecati rem delectus corrupti voluptatem, illo animi nemo nisi, cum placeat suscipit quasi! Ut veritatis, labore eos facere tempora placeat est, animi voluptates, ad quas ipsam nisi iste repellendus hic?</p>
+                    </article> <!--/.blog-post-->
+                </section> <!--/.posted-blog-->
+                <section class="blog-comments">
+                    <h2>Comments:</h2>
+                    <article class="posted-comments">
+                        <div class="user-image">
+                            <img src="./assets/comment-1.jpg" alt="">
+                        </div>
+                        <div class="comment-text">
+                            <p>
+                                <time datetime="2018-10-9">Tuesday October 9th, 2018</time> 
+                                by Jeremy
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo eius reprehenderit possimus. Impedit pariatur corrupti nulla, accusamus eos ipsa culpa facilis eveniet nobis iusto laboriosam id ea quibusdam? Non.</p>
+                        </div>
+                    </article><!--/.posted-comments-->
+                    <article class="posted-comments">
+                        <div class="user-image">
+                            <img src="./assets/comment-2.jpg" alt="">
+                        </div>
+                        <div class="comment-text">
+                            <p>
+                                <time datetime="2018-10-10">Wednesday October 10th, 2018</time>
+                                by Julia
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet earum doloremque ducimus dolor illo mollitia ullam hic tempora debitis perferendis facere, iusto natus quod cupiditate aliquam explicabo voluptatibus eius!</p>
+                        </div>
+                    </article><!--/.posted-comments-->
+                    <form action="">
+                        <fieldset>
+                            <legend class="sr-only">Post your comment</legend>
+                            <div class="flex-form">
+                                <label for="user-name" class="sr-only">Enter your name</label>
+                                <input type="text" id="user-name" name="user-name" placeholder="Name">
+                            
+                                <label for="user-email" class="sr-only">Enter your email</label>
+                                <input type="user-email" id="user-email" name="user-email" placeholder="Email address">
+                            </div>
+                            
+                            <label for="user-comment" class="sr-only">Enter your comment</label>
+                            <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                            
+                            
+                            <button type="submit" class="submit-button">Post comment</button>
+                        </fieldset>
+                    </form>
+                </section><!--/.blog-comments-->
+            </section><!--/.blog-->
+        </div><!--/.wrapper-->
     </main>
     <!--main ends-->
 

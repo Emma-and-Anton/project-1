@@ -12,68 +12,73 @@
 <body>
     
     <!--header starts-->
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Get in touch</h1>
+    <header class="other-pages contact-header">
+        <div class="wrapper">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Get in touch</h1>
+        </div><!--/.wrapper-->
     </header>
     <!--header ends-->  
 
     <!--main starts here-->
     <main>
-        <section class="contact-info">
-            <nav class="social-nav">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/" aria-label="Go to Facebook">
-                            <i aria-hidden="true" class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com" aria-label="Go to Instagram">
-                            <i aria-hidden="true" class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/" aria-label="Go to Twitter">
-                            <i aria-hidden="true" class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.whatsapp.com/" aria-label="Go to Whatsapp">
-                            <i aria-hidden="true" class="fab fa-whatsapp"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav><!--/.social-nav-->
-            <address>
-                <a href="mailto:info@email.com">info@email.com</a><br>
-                <a href="tel:+1123456789">123-456-7890</a>
-                <a href="https://goo.gl/maps/rytsjyNdKN2MML6x7">123 Queen Street West, Unit 10</br>Toronto, Ontario</br>M5V2D5</a>
-            </address>
-        </section><!--/.contact-info-->
-        <form action="">
-            <fieldset>
-                <legend class="sr-only">Contact us</legend>
-        
-                <label for="user-name" class="sr-only">Enter your name</label>
-                <input type="text" id="user-name" name="user-name" placeholder="Name">
-        
-                <label for="user-email" class="sr-only">Enter your email</label>
-                <input type="user-email" id="user-email" name="user-email" placeholder="Email address">
-        
-                <label for="user-message" class="sr-only">Enter your message</label>
-                <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
-        
-                <button type="submit" class="submit-button">Submit</button>
-            </fieldset>
-        </form>
+        <div class="wrapper contact-page">
+            <section class="contact-info">
+                <nav class="social-nav">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" aria-label="Go to Facebook">
+                                <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" aria-label="Go to Instagram">
+                                <i aria-hidden="true" class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" aria-label="Go to Twitter">
+                                <i aria-hidden="true" class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.whatsapp.com/" aria-label="Go to Whatsapp">
+                                <i aria-hidden="true" class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!--/.social-nav-->
+                <address>
+                    <a href="mailto:info@email.com">info@email.com</a><br>
+                    <a href="tel:+1123456789">123-456-7890</a>
+                    <a href="https://goo.gl/maps/rytsjyNdKN2MML6x7">123 Queen Street West, Unit 10</br>Toronto, Ontario</br>M5V2D5</a>
+                </address>
+            </section><!--/.contact-info-->
+            <form action="">
+                <fieldset>
+                    <legend class="sr-only">Contact us</legend>
+                    <div class="flex-form">
+                        <label for="user-name" class="sr-only">Enter your name</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Name">
+                
+                        <label for="user-email" class="sr-only">Enter your email</label>
+                        <input type="user-email" id="user-email" name="user-email" placeholder="Email address">
+                    </div><!--/.flex-form-->
+                    <div class="flex-form">
+                        <label for="user-message" class="sr-only">Enter your message</label>
+                        <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div><!--/flex-form-->
+                    <button type="submit" class="submit-button">Submit</button>
+                </fieldset>
+            </form>
+        </div><!--/.wrapper-->
     </main>
     <!--main ends here-->
 

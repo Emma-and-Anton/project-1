@@ -6,15 +6,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .other-pages h1 {
     font-size: 8rem;
     line-height: 9.2rem;
     text-align: center;
-    // align-content: center;
-    margin-bottom: 200px;
+    margin-top: auto;
+    margin-bottom: 250px;
 }
 
 .blog-header {
@@ -136,7 +136,57 @@ time {
     padding-top: 15px;
 }
 
+//contact-us styles
+.contact-header {
+    background-image: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.contact-info a {
+    color: $textColor;
+}
+
+.social-nav .fab {
+    font-size: 2.2rem;
+    padding: 10px 20px;
+}
+
+.social-nav .fab:first-child {
+    padding-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+a[href*="mail"] {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: $primaryFont;
+    padding: 15px 0 25px 0;
+}
+
+address a {
+    display: block;
+    font-family: $bodyFont;
+    text-transform: none;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+}
 
 

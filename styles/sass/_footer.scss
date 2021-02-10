@@ -4,3 +4,10 @@ footer {
     padding: 5px;
     text-align: center;
 }
+
+footer a {
+    text-transform: none;
+    color: $darkBackground;
+    font-family: $bodyFont;
+    font-weight: 400;
+}

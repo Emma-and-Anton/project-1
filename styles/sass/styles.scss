@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: $bodyFont;
-    font-weight: 300;
+    font-weight: 400;
     color: #FFFFFF;
 }
 
@@ -30,7 +30,7 @@ button {
     height: 90vh;
     padding-top: 25px;
 
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/header-image.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../assets/header-image.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@ h1 {
     font-size: 12rem;
     line-height: 11rem;
 
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 h1 span {
@@ -105,7 +105,6 @@ body {
 }
 
 .about {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,11 +135,16 @@ body {
     padding: 15px 25px;
 }
 
+.find-out:hover,
+.find-out:focus {
+    background-color: $lightBackground;
+    color: $textColor;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
 
-    padding: 0 45px;
     display: flex;
     flex-direction: column;
 
@@ -150,6 +154,19 @@ body {
 .new-additions,
 .new-feature {
     display: flex;
+    justify-content: space-between;
+}
+
+.new-feature .text-content {
+    text-align: right;
+}
+
+.new-additions .text-content {
+    padding-right: 110px;
+}
+
+.new-feature .text-content {
+    padding-left: 110px;
 }
 
 .image-container {
@@ -160,7 +177,9 @@ body {
 
 
 .text-content {
-    width: 56%;
+    width: 40%;
+    margin: auto 0;
+    
 }
 
 .text-content h2 {
@@ -182,31 +201,15 @@ body {
     padding: 15px 25px;
 }
 
-.new-additions .text-content {
-    padding-top: 75px;
-    padding-right: 85px;
-    padding-left: 200px;
-}
-
-.new-feature .text-content {
-    padding-left: 85px;
-    padding-right: 185px;
-    padding-bottom: 40px;
-
-    text-align: right;
-}
-
-.new-additions {
-    margin-bottom: 100px;
-}
-
-.new-feature {
-    position: relative;
+.read-more:hover,
+.read-more:focus {
+    background-color: $lightShadow;
+    color: $darkBackground;
 }
 
 .new-additions .image-container {
     position: relative;
-    left: -45px;
+    left: 0;
     top: -45px;
 }
 
@@ -215,9 +218,9 @@ body {
 }
 
 .new-feature .image-container {
-    position: absolute;
-    right: -45px;
-    top: -45px;
+    position: relative;
+    right: 0px;
+    top: 45px;
 }
 
 .new-feature img {
@@ -256,6 +259,12 @@ body {
     padding: 13px 8px;
 }
 
+.hover-state:hover .fas,
+.hover-state:focus .fas {
+    background-color: $lightBackground;
+    color: $textColor;
+}
+
 .page-directory a p {
     font-family: $bodyFont;
     font-weight: 400;
@@ -270,12 +279,19 @@ body {
     letter-spacing: 1px;
 }
 
+.hover-state:hover h2,
+.hover-state:focus h2,
+.hover-state:hover p,
+.hover-state:focus p {
+    color: $hoverColor;
+}
+
 .page-directory  li {
     padding-left: 80px;
     padding-right: 15px;
 }
 
-.monthly-profile {
+.monthly-profile .wrapper {
     display: flex;
     width: 100%;
     padding-top: 120px;

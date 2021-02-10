@@ -16,3 +16,8 @@
     letter-spacing: 1px;
     font-weight: 700;
 }
+
+.main-nav li a:hover,
+.main-nav li a:focus  {
+    color: $lightShadow;
+}

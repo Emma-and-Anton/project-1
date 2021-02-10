@@ -10,7 +10,7 @@ fieldset {
 input, 
 textarea {
     margin: 20px;
-    padding: 30px 20px 20px;
+    padding: 20px;
     font-size: 1.7rem;
     background-color: $darkBackground;
     border: 2px solid $lightShadow;
@@ -29,6 +29,16 @@ input {
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
+    color: $textColor;
+    transition: all 0.2s;
+}
+
+input:hover,
+input:focus {
+    border-top: 2px solid $lightShadow;
+    border-right: 2px solid $lightShadow;
+    border-left: 2px solid $lightShadow;
+    background-color: $blogFormHover;
 }
 
 input[type="text"] {
@@ -40,6 +50,13 @@ textarea {
     height: 200px;
     margin: 0;
     margin-top: 40px;
+    color: $textColor;
+    transition: all 0.2s;
+}
+
+textarea:hover,
+textarea:focus {
+    background-color: $blogFormHover;
 }
 
 .submit-button {
@@ -50,6 +67,13 @@ textarea {
     margin-top: 40px;
     background-color: $lightBackground;
     border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: $lightShadow;
+    color: $darkBackground;
 }
 
 //contact form
@@ -59,7 +83,7 @@ textarea {
     max-width: 860px;
     background-color: $lightBackground;
     width: 100%;
-    padding: 25px;
+    padding: 60px 45px 45px 45px;
     box-shadow: -35px 35px $lightShadow;
     position: relative;
     top: -220px;
@@ -67,10 +91,16 @@ textarea {
     flex-shrink: 1;
 }
 
-
 .contact-page input,
 .contact-page textarea {
     background-color: $lightBackground;
+}
+
+.contact-page input:hover,
+.contact-page input:focus,
+.contact-page textarea:hover,
+.contact-page textarea:focus {
+    background-color: $contactFormHover;
 }
 
 .contact-page textarea {
@@ -80,4 +110,6 @@ textarea {
 
 .contact-page button {
     background-color: $darkBackground;
+    padding: 10px;
+    margin-top: 50px;
 }

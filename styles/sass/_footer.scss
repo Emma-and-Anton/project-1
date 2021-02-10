@@ -10,4 +10,10 @@ footer a {
     color: $darkBackground;
     font-family: $bodyFont;
     font-weight: 400;
+    transition: all 0.2s;
+}
+
+footer a:hover,
+footer a:focus {
+    color: rgb(194, 52, 0);
 }

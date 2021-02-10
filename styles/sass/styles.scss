@@ -1,6 +1,6 @@
 @import "variables";
 @import "setup";
-@import "navigation";
+@import "mainNavigation";
 @import "form";
 @import "secondaryPages";
 @import "footer";
@@ -126,13 +126,14 @@ body {
 }
 
 .find-out {
-    background-color: #86E0F9;
-    color: #0C1423;
+    background-color: $lightShadow;
+    color: $darkBackground;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 700;
     border: none;
     padding: 15px 25px;
+    transition: all 0.2s;
 }
 
 .find-out:hover,
@@ -199,6 +200,7 @@ body {
     font-weight: 700;
     border: none;
     padding: 15px 25px;
+    transition: all 0.2s;
 }
 
 .read-more:hover,
@@ -257,6 +259,10 @@ body {
     background-color: #86E0F9;
     box-shadow: 0px 0px 2px #86E0F9;
     padding: 13px 8px;
+}
+
+.hover-state {
+    transition: all 0.2s;
 }
 
 .hover-state:hover .fas,

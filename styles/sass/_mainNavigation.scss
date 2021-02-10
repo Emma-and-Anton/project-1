@@ -10,11 +10,12 @@
 
 .main-nav li a {
     padding: 25px;
-    color: #FFFFFF;
+    color: $textColor;
     font-size: 2rem;
     line-height: 2.9rem;
     letter-spacing: 1px;
     font-weight: 700;
+    transition: all 0.2s;
 }
 
 .main-nav li a:hover,

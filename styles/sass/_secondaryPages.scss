@@ -14,7 +14,11 @@
     line-height: 9.2rem;
     text-align: center;
     margin-top: auto;
-    margin-bottom: 250px;
+    margin-bottom: 215px;
+}
+
+.blog-header h1 {
+    margin-right: 100px;
 }
 
 .blog-header {
@@ -23,19 +27,20 @@
     background-size: cover;
 }
 
-.blog-main .wrapper{
+.blog-main {
     display: flex;
     justify-content: space-between;
 }
 
 aside {
     background-color: $lightBackground;
-    width: 28%;
+    width: 26%;
     height: 100%;
     padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
     margin-top: 120px;
+    margin-left: 110px;
 }
 
 aside h3 {
@@ -59,7 +64,6 @@ aside p {
 
 .blog-main ul li {
     padding: 5px;
-    font-weight: 300;
 }
 
 .aside-image {
@@ -71,13 +75,16 @@ aside p {
 }
 
 .blog {
-    width: 58%;
-    position: relative;
-    top: -220px;
+    width: 62%;
+    margin-top: -220px;
+}
+
+.posted-blog {
+    width: 100%;
 }
 
 .blog-image {
-    width: 100%;
+    width: 96%;
     height: auto;
     margin: 20px 0 0 35px;
     box-shadow: -35px 35px $lightShadow;
@@ -88,6 +95,7 @@ aside p {
     border: 5px solid $lightShadow;
     border-right: none;
     border-top: none;
+    margin-right: 110px;
 }
 
 .blog-post h2{
@@ -103,6 +111,9 @@ time {
     margin-top: 55px;
 }
 
+.blog-comments {
+    margin-right: 110px;
+}
 
 .blog-comments h2 {
     font-size: 2.6rem;
@@ -113,7 +124,7 @@ time {
 
 .posted-comments {
     display: flex;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 80px 0;
     padding-left: 45px;
 }
 
@@ -136,12 +147,23 @@ time {
     padding-top: 15px;
 }
 
+.blog-comments form {
+    margin-bottom: 80px;
+}
+
 //contact-us styles
 .contact-header {
     background-image: url(../assets/contact-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.contact-header h1 {
+    margin-left: 20px;
+    margin-bottom: 230px;
+    font-size: 7rem;
+}
+
 
 .contact-page {
     display: flex;
@@ -162,6 +184,14 @@ time {
 .social-nav .fab {
     font-size: 2.2rem;
     padding: 10px 20px;
+    transition: all 0.2s;
+}
+
+.social-nav .fab:hover,
+.social-nav .fab:focus,
+a[href*="mail"]:hover,
+a[href*="mail"]:focus {
+    color: $lightShadow;
 }
 
 .social-nav .fab:first-child {
@@ -177,6 +207,7 @@ a[href*="mail"] {
     font-size: 2.2rem;
     font-family: $primaryFont;
     padding: 15px 0 25px 0;
+    transition: all 0.2s;
 }
 
 address a {
@@ -187,6 +218,12 @@ address a {
     font-weight: 300;
     line-height: 2.7rem;
     letter-spacing: 1px;
+    transition: all 0.2s;
 }
 
-
+address a[href*="tel"]:hover,
+address a[href*="tel"]:focus,
+address a:last-child:hover,
+address a:last-child:focus {
+    color: $hoverColor;
+}

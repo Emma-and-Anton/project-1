@@ -1045,12 +1045,12 @@ footer a:focus {
 
 @media (max-width: 1165px) {
   .new-additions .text-content {
-    padding-right: 0px;
     margin: auto;
+    padding-right: 0px;
   }
   .new-feature .text-content {
-    padding-left: 0px;
     margin: auto;
+    padding-left: 0px;
   }
   .new-additions img {
     -webkit-box-shadow: 2vw 2vw #86E0F9;
@@ -1072,16 +1072,6 @@ footer a:focus {
   .about p {
     text-align: center;
   }
-  .new-additions .image-container,
-  .new-feature .image-container {
-    width: 35%;
-  }
-  .container .text-content {
-    width: 55%;
-  }
-  .container .text-content p {
-    margin: 12px 0 20px;
-  }
   .container {
     height: 570px;
     -webkit-box-pack: justify;
@@ -1089,9 +1079,16 @@ footer a:focus {
             justify-content: space-between;
     padding: 25px 0;
   }
+  .container .text-content {
+    width: 55%;
+  }
+  .container .text-content p {
+    margin: 12px 0 20px;
+  }
   .new-additions .image-container,
   .new-feature .image-container {
     position: static;
+    width: 35%;
   }
 }
 
@@ -1130,19 +1127,25 @@ footer a:focus {
             flex-direction: column;
   }
   aside {
-    width: 90%;
-    margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 20px;
+    padding: 20px;
   }
   .aside-about {
     width: 60%;
     margin: auto;
     text-align: center;
+  }
+  aside .aside-image {
+    position: static;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .aside-about p {
     padding: 0;
@@ -1153,14 +1156,7 @@ footer a:focus {
   .aside-posts h3 {
     text-align: center;
   }
-  aside .aside-image {
-    position: static;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
   .blog {
-    margin-top: 0;
     width: 90%;
     margin: 0 auto;
   }
@@ -1180,22 +1176,15 @@ footer a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .contact-page form {
-    width: 90%;
-    margin: 0 auto;
-    top: -70px;
-    right: 0;
-  }
   .contact-info {
-    width: 100%;
-    margin: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 30px;
+    width: 100%;
+    margin: auto auto 30px auto;
   }
   a[href*="mail"] {
     padding: 0;
@@ -1209,8 +1198,14 @@ footer a:focus {
             align-items: center;
   }
   .social-nav .fab {
-    font-size: 5rem;
     padding: 30px;
+    font-size: 5rem;
+  }
+  .contact-page form {
+    width: 90%;
+    margin: 0 auto;
+    top: -70px;
+    right: 0;
   }
 }
 
@@ -1247,22 +1242,26 @@ footer a:focus {
 }
 
 @media (max-width: 600px) {
-  .header-image {
-    display: none;
-  }
   .index-header {
     height: 50vh;
   }
   .index-header h1 {
     max-width: 65%;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     font-size: calc(4rem + 5.6vw);
     line-height: 8rem;
   }
+  .header-image {
+    display: none;
+  }
   .about {
     padding: 60px 30px 50px 30px;
+  }
+  .container {
+    height: auto;
+    padding-top: 35px;
   }
   .new-additions {
     -webkit-box-orient: vertical;
@@ -1277,10 +1276,6 @@ footer a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .container {
-    height: auto;
-    padding-top: 35px;
-  }
   .new-additions .image-container,
   .new-feature .image-container {
     width: 60%;
@@ -1289,8 +1284,8 @@ footer a:focus {
   .new-additions .text-content,
   .new-feature .text-content {
     width: 80%;
-    text-align: center;
     margin: 25px auto;
+    text-align: center;
   }
   .monthly-profile .wrapper {
     -ms-flex-wrap: wrap;
@@ -1304,8 +1299,7 @@ footer a:focus {
     margin: auto;
   }
   .monthly-profile .image-container {
-    margin: auto;
-    margin-bottom: 40px;
+    margin: auto auto 40px auto;
   }
   .gallery .wrapper {
     -ms-flex-wrap: wrap;
@@ -1316,11 +1310,9 @@ footer a:focus {
     margin: 20px auto;
     width: 90%;
   }
-  .gallery-item:first-child {
-    margin: 40px auto 20px;
-  }
+  .gallery-item:first-child,
   .gallery-item:last-child {
-    margin: 20px auto 40px;
+    margin: 40px auto 20px;
   }
   footer .footer-divider {
     display: none;
@@ -1332,30 +1324,23 @@ footer a:focus {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .flex-form {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .flex-form input:first-of-type {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  input {
-    width: 100%;
+  .blog-comments h2 {
+    text-align: center;
   }
   .posted-comments,
   .blog-comments h2 {
     padding-left: 0;
   }
-  .blog-comments h2 {
-    text-align: center;
+  .flex-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .contact-page input[type="text"] {
+  input {
     width: 100%;
   }
-  .contact-page input[type="email"] {
-    width: 100%;
-    margin: 0;
+  .flex-form input:first-of-type {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .social-nav .fab {
     font-size: 2.7rem;
@@ -1370,6 +1355,13 @@ footer a:focus {
   .contact-page form {
     padding: 22px;
   }
+  .contact-page input[type="text"] {
+    width: 100%;
+  }
+  .contact-page input[type="email"] {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1379,15 +1371,15 @@ footer a:focus {
   .main-nav {
     text-align: right;
   }
+  .main-nav li {
+    display: none;
+  }
   .main-nav .nav-toggle {
     display: inline-block;
   }
   .main-nav .fas {
     color: #FFFFFF;
     font-size: 4rem;
-  }
-  .main-nav li {
-    display: none;
   }
   aside {
     -webkit-box-orient: vertical;
@@ -1409,7 +1401,7 @@ footer a:focus {
     margin-right: auto;
   }
   .contact-header h1 {
-    line-height: 6rem;
     margin-bottom: 100px;
+    line-height: 6rem;
   }
 }

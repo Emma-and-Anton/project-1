@@ -11,6 +11,7 @@ input,
 textarea {
     margin: 20px;
     padding: 20px;
+    width: 100%;
     font-size: 1.7rem;
     background-color: $darkBackground;
     border: 2px solid $lightShadow;
@@ -24,7 +25,6 @@ textarea {
 }
 
 input {
-    flex-grow: 1;
     margin: 0;
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;
@@ -77,18 +77,27 @@ textarea:focus {
 }
 
 //contact form
+fieldset {
+    width: 100%;
+}
 
 .contact-page form {
-    width: 75%;
     max-width: 860px;
     background-color: $lightBackground;
-    width: 100%;
+    width: 75%;
     padding: 60px 45px 45px 45px;
-    box-shadow: -35px 35px $lightShadow;
+    box-shadow: -2.5vw 2.5vw $lightShadow;
     position: relative;
     top: -220px;
     right: -30px;
-    flex-shrink: 1;
+}
+.contact-page input[type="text"] {
+    width: 45%;
+    margin-right: 5%;
+}
+.contact-page input[type="email"] {
+    width: 45%;
+    margin-left: 5%;
 }
 
 .contact-page input,

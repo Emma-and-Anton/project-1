@@ -16,6 +16,10 @@
     .new-feature img {
     box-shadow: -2vw 2vw $lightShadow;
     }
+
+    .contact-page form {
+        width: 65%;
+    }
 }
 
 //second break point
@@ -129,6 +133,46 @@
     .blog-post,
     .blog-comments {
         margin: 0;
+    }
+
+    .contact-header {
+        height: 50vh;
+    }
+    .contact-header h1 {
+        margin: auto;
+    }
+
+    .contact-page {
+        flex-direction: column-reverse;
+    }
+
+    .contact-page form {
+        width: 90%;
+        margin: 0 auto;
+        top: -70px;
+        right: 0;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    a[href*="mail"] {
+        padding: 0;
+    }
+
+    .social-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-nav .fab {
+    font-size: 5rem;
+    padding: 30px;
     }
 
 }
@@ -284,6 +328,29 @@
     .blog-comments h2 {
         text-align: center;
     }
+
+    .contact-page input[type="text"] {
+    width: 100%;
+    }
+    .contact-page input[type="email"] {
+    width: 100%;
+    margin: 0;
+    }
+
+    .social-nav .fab {
+    font-size: 2.7rem;
+    padding: 25px;
+    }
+
+    a[href*="mail"] {
+        font-size: 1.8rem;
+    }
+    address a {
+        font-size: 1.4rem;
+    }
+    .contact-page form {
+        padding: 22px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -327,6 +394,8 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    
+    .contact-header h1 {
+        line-height: 6rem;
+        margin-bottom: 100px;
+    }
 }

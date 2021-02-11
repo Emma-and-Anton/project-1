@@ -1,19 +1,20 @@
 footer {
-    background-color: $lightShadow;
-    color: $darkBackground;
     padding: 5px;
     text-align: center;
+    color: $darkBackground;
+    background-color: $lightShadow;
 }
 
 footer a {
     text-transform: none;
-    color: $darkBackground;
     font-family: $bodyFont;
     font-weight: 400;
+    color: $darkBackground;
+
     transition: all 0.2s;
 }
 
 footer a:hover,
 footer a:focus {
-    color: rgb(194, 52, 0);
+    color: $junoColor;
 }

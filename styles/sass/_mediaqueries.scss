@@ -1,12 +1,14 @@
-// first minor breakdown 
+// first minor breakpoint 
 @media (max-width: 1165px) {
+    //index page breakpoint styles
     .new-additions .text-content {
+        margin: auto;
         padding-right: 0px;
-        margin: auto;
     }
+
     .new-feature .text-content {
-        padding-left: 0px;
         margin: auto;
+        padding-left: 0px;
     }
 
     .new-additions img {
@@ -14,17 +16,18 @@
     }
     
     .new-feature img {
-    box-shadow: -2vw 2vw $lightShadow;
+        box-shadow: -2vw 2vw $lightShadow;
     }
 
+    //contact page breakpoint styles
     .contact-page form {
         width: 65%;
     }
 }
 
-//second break point
+//second minor breakpoint
 @media (max-width: 1025px) {
-
+    //index page breakpoint styles
     .about {
         padding: 115px 60px 115px;
     }
@@ -33,9 +36,10 @@
         text-align: center;
     }
 
-    .new-additions .image-container,
-    .new-feature .image-container {
-    width: 35%;
+    .container {
+        height: 570px;
+        justify-content: space-between;
+        padding: 25px 0;
     }
 
     .container .text-content {
@@ -46,45 +50,49 @@
         margin: 12px 0 20px;
     }
 
-    .container {
-        height: 570px;
-        justify-content: space-between;
-        padding: 25px 0;
-    }
-
     .new-additions .image-container,
     .new-feature .image-container {
-    position: static;
+        position: static;
+        width: 35%;
     }
 }
 
+//first major breakpoint
 @media (max-width: 900px) {
+    //global breakpoint styles
     .wrapper {
         width: 90%;
     }
+
+    //mainNavigation breakpoint styles
     .main-nav ul{
         justify-content: center;
     }
 
+    //index page breakpoint styles
     .page-directory {
         padding-top: 100px;
     }
+
     .monthly-profile .text-content {
-    margin-left: 60px;
+        margin-left: 60px;
     }
+
     .monthly-profile .wrapper {
-    padding: 60px 0 60px;
+        padding: 60px 0 60px;
     }
 
     .monthly-profile img {
-    box-shadow: 2vw 2vw $lightShadow;
+        box-shadow: 2vw 2vw $lightShadow;
     }
+
     .monthly-profile .text-content {
         text-align: center;
     }
 
+    //blog page breakpoint styles
     .blog-header h1 {
-    margin-right: 0;
+        margin-right: 0;
     }
 
     .blog-main {
@@ -92,17 +100,23 @@
     }
 
     aside {
-        width: 90%;
-        margin: 0 auto;
         flex-direction: row;
+        width: 90%;
+        margin: 20px auto 0;
         padding: 20px;
-        margin-top: 20px;
     }
 
     .aside-about {
         width: 60%;
         margin: auto;
         text-align: center;
+    }
+    
+    .aside-about .aside-image {
+        position: static;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .aside-about p {
@@ -117,15 +131,7 @@
         text-align: center;
     }
 
-    aside .aside-image {
-        position: static;
-        width: 50%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
     .blog{
-        margin-top: 0;
         width: 90%;
         margin: 0 auto;
     }
@@ -135,9 +141,11 @@
         margin: 0;
     }
 
+    //contact page breakpoint styles
     .contact-header {
         height: 50vh;
     }
+
     .contact-header h1 {
         margin: auto;
     }
@@ -146,50 +154,54 @@
         flex-direction: column-reverse;
     }
 
-    .contact-page form {
-        width: 90%;
-        margin: 0 auto;
-        top: -70px;
-        right: 0;
-    }
-
     .contact-info {
-        width: 100%;
-        margin: auto;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 30px;
-    }
 
+        width: 100%;
+        margin: auto auto 30px auto;
+    }
+    
     a[href*="mail"] {
         padding: 0;
     }
-
+    
     .social-nav {
         display: flex;
         align-items: center;
     }
-
+    
     .social-nav .fab {
-    font-size: 5rem;
-    padding: 30px;
+        padding: 30px;
+        font-size: 5rem;
     }
 
+    .contact-page form {
+        width: 90%;
+        margin: 0 auto;
+
+        top: -70px;
+        right: 0;
+    }
 }
 
+//third minor breakpoint
 @media (max-width: 700px) {
+    //index page breakpoint styles
     .index-header {
         height: 70vh;
     }
 
-    
     .index-header h1 {
         position: relative;
         z-index: 1;
     }
+
     .page-directory li {
         width: 100%;
     }
+
+    //blog page breakpoint styles
     .blog-header {
         height: 50vh;
     }
@@ -214,31 +226,39 @@
     .aside-posts {
         width: 45%;
     }
-
 }
 
+//second major breakpoint
 @media (max-width: 600px) {
-    .header-image {
-        display: none;
-    }
+    //index page breakpoint styles
     .index-header {
         height: 50vh;
     }
 
     .index-header h1 {
         max-width: 65%;
-        text-align: center;
         margin-left: auto;
         margin-right: auto;
+
+        text-align: center;
         font-size: calc(4rem + 5.6vw);
         line-height: 8rem;
+    }
+
+    .header-image {
+        display: none;
     }
 
     .about {
         padding: 60px 30px 50px 30px;
     }
 
-    .new-additions{
+    .container {
+        height: auto;
+        padding-top: 35px;
+    }
+
+    .new-additions {
         flex-direction: column;
         margin-bottom: 15px;
     }
@@ -247,22 +267,17 @@
         flex-direction: column-reverse;
     }
 
-    .container {
-        height: auto;
-        padding-top: 35px;
-    }
-
     .new-additions .image-container,
     .new-feature .image-container  {
-    width: 60%;
-    margin: 0 auto;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .new-additions .text-content,
     .new-feature .text-content {
         width: 80%;
-        text-align: center;
         margin: 25px auto;
+        text-align: center;
     }
 
     .monthly-profile .wrapper {
@@ -270,14 +285,15 @@
         justify-content: center;
         padding: 30px 0 50px;
     }
+
     .monthly-profile .text-content {
         margin: auto;
     }
 
     .monthly-profile .image-container {
-        margin: auto;
-        margin-bottom: 40px;
+        margin: auto auto 40px auto;
     }
+
     .gallery .wrapper {
         flex-wrap: wrap;
         padding: 0;
@@ -287,13 +303,13 @@
         margin: 20px auto;
         width: 90%;
     }
-    .gallery-item:first-child {
+
+    .gallery-item:first-child,
+    .gallery-item:last-child {
         margin: 40px auto 20px;
     }
-    .gallery-item:last-child {
-        margin: 20px auto 40px;
-    }
 
+    //footer breakpoint styles
     footer .footer-divider {
         display: none;
     }
@@ -302,22 +318,14 @@
         display: block;
     }
 
+    //blog page breakpoint styles
     .blog-post {
         padding-left: 20px;
         padding-right: 20px;
     }
-
-    .flex-form {
-        flex-wrap: wrap;
-    }
-
-    .flex-form input:first-of-type {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    input {
-        width: 100%;
+    
+    .blog-comments h2 {
+        text-align: center;
     }
 
     .posted-comments,
@@ -325,41 +333,62 @@
         padding-left: 0;
     }
 
-    .blog-comments h2 {
-        text-align: center;
+    //form breakpoint styles
+    .flex-form {
+        flex-wrap: wrap;
+    }
+    
+    input {
+        width: 100%;
     }
 
-    .contact-page input[type="text"] {
-    width: 100%;
-    }
-    .contact-page input[type="email"] {
-    width: 100%;
-    margin: 0;
+    .flex-form input:first-of-type {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
+    //contact page breakpoint styles
     .social-nav .fab {
-    font-size: 2.7rem;
-    padding: 25px;
+        font-size: 2.7rem;
+        padding: 25px;
     }
-
+    
     a[href*="mail"] {
         font-size: 1.8rem;
     }
+
     address a {
         font-size: 1.4rem;
     }
+
+    //contact page form breakpoint styles
     .contact-page form {
         padding: 22px;
     }
+    .contact-page input[type="text"] {
+        width: 100%;
+    }
+
+    .contact-page input[type="email"] {
+        width: 100%;
+        margin: 0;
+    }
 }
 
+//third major breakpoint 
 @media (max-width: 450px) {
+    //index page breakpoint styles
     .index-header h1 {
         max-width: 80%;
     }
 
+    //mainNavigation breakpoint styles
     .main-nav {
         text-align: right;
+    }
+
+    .main-nav li {
+        display: none;
     }
 
     .main-nav .nav-toggle {
@@ -371,10 +400,7 @@
         font-size: 4rem;
     }
 
-    .main-nav li {
-        display: none;
-    }
-
+    //blog page breakpoint styles
     aside {
         flex-direction: column;
     }
@@ -394,8 +420,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    //contact page breakpoint styles
     .contact-header h1 {
-        line-height: 6rem;
         margin-bottom: 100px;
+        line-height: 6rem;
     }
 }

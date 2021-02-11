@@ -9,19 +9,14 @@ fieldset {
 
 input, 
 textarea {
+    width: 100%;
     margin: 20px;
     padding: 20px;
-    width: 100%;
-    font-size: 1.7rem;
-    background-color: $darkBackground;
     border: 2px solid $lightShadow;
-}
 
-::placeholder {
-    color: $textColor;
-    opacity: 1;
-    font-family: $bodyFont;
     font-size: 1.7rem;
+
+    background-color: $darkBackground;
 }
 
 input {
@@ -29,8 +24,14 @@ input {
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
+
     color: $textColor;
+
     transition: all 0.2s;
+}
+
+input[type="text"] {
+    margin-right: 40px;
 }
 
 input:hover,
@@ -38,19 +39,17 @@ input:focus {
     border-top: 2px solid $lightShadow;
     border-right: 2px solid $lightShadow;
     border-left: 2px solid $lightShadow;
-    background-color: $blogFormHover;
-}
 
-input[type="text"] {
-    margin-right: 40px;
+    background-color: $blogFormHover;
 }
 
 textarea {
     width: 100%;
     height: 200px;
-    margin: 0;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
+
     color: $textColor;
+
     transition: all 0.2s;
 }
 
@@ -59,14 +58,23 @@ textarea:focus {
     background-color: $blogFormHover;
 }
 
+::placeholder {
+    font-family: $bodyFont;
+    font-size: 1.7rem;
+    color: $textColor;
+    opacity: 1;
+}
+
 .submit-button {
     width: 100%;
-    color: $textColor;
-    font-size: 1.8rem;
-    padding: 15px 0;
     margin-top: 40px;
-    background-color: $lightBackground;
+    padding: 15px 0;
     border: 2px solid transparent;
+
+    font-size: 1.8rem;
+    color: $textColor;
+    background-color: $lightBackground;
+
     transition: all 0.2s;
 }
 
@@ -77,32 +85,38 @@ textarea:focus {
 }
 
 //contact form
-fieldset {
-    width: 100%;
-}
 
 .contact-page form {
     max-width: 860px;
-    background-color: $lightBackground;
     width: 75%;
     padding: 60px 45px 45px 45px;
+
+    background-color: $lightBackground;
     box-shadow: -2.5vw 2.5vw $lightShadow;
+
     position: relative;
     top: -220px;
     right: -30px;
-}
-.contact-page input[type="text"] {
-    width: 45%;
-    margin-right: 5%;
-}
-.contact-page input[type="email"] {
-    width: 45%;
-    margin-left: 5%;
 }
 
 .contact-page input,
 .contact-page textarea {
     background-color: $lightBackground;
+}
+
+.contact-page input[type="text"] {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.contact-page input[type="email"] {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.contact-page textarea {
+    width: 100%;
+    height: 230px;
 }
 
 .contact-page input:hover,
@@ -112,13 +126,8 @@ fieldset {
     background-color: $contactFormHover;
 }
 
-.contact-page textarea {
-    width: 100%;
-    height: 230px;
-}
-
 .contact-page button {
-    background-color: $darkBackground;
-    padding: 10px;
     margin-top: 50px;
+    padding: 10px;
+    background-color: $darkBackground;
 }

@@ -18,6 +18,10 @@
     transition: all 0.2s;
 }
 
+.main-nav .nav-toggle {
+    display: none;
+}
+
 .main-nav li a:hover,
 .main-nav li a:focus  {
     color: $lightShadow;
